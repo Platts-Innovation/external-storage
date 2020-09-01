@@ -1,5 +1,10 @@
 ---
 apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: efs-provisioner
+---
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: efs-provisioner
