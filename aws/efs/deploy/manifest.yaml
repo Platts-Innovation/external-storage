@@ -9,8 +9,8 @@ kind: ConfigMap
 metadata:
   name: efs-provisioner
 data:
-  file.system.id: fs-abe3f762
-  aws.region: eu-west-1
+  file.system.id: fs-2c97dadd
+  aws.region: eu-west-2
   provisioner.name: example.com/aws-efs
   dns.name: ""
 ---
@@ -62,7 +62,7 @@ spec:
       volumes:
         - name: pv-volume
           nfs:
-            server: fs-abe3f762.efs.eu-west-1.amazonaws.com
+            server: fs-2c97dadd.efs.eu-west-2.amazonaws.com
             path: /
 ---
 kind: StorageClass
